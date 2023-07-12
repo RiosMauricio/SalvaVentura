@@ -18,7 +18,7 @@
                 <span class="tooltip">Home</span>
               </li>
               <li>
-                <a href="/">
+                <a [routerLink]="['/aventuras']">
                   <i class='bx bx-globe'></i>
                   <span class="links_name">Aventuras</span>
                 </a>
@@ -40,5 +40,5 @@
             </ul>
           </div>       
     </p-sidebar>
-    <p-button (click)="sidebarVisible = true" icon="pi pi-bars" [style]="{ color: 'white', 'background-color': '#676F54', 'border': 'none' }"></p-button>
+    <p-button (click)="sidebarVisible = true" icon="pi pi-bars" [style]="{ color: 'black', 'background-color': 'white', 'border': 'none', 'margin':'1%'}"></p-button>
 </div>
