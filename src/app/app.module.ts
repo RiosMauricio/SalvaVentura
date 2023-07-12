@@ -8,12 +8,14 @@ import { HeaderComponent } from './components/layout/header/header.component';
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AventurasComponent } from './components/aventuras/aventuras.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    AventurasComponent
   ],
   imports: [
     BrowserModule,
