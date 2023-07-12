@@ -1,21 +1,44 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/home"><img src="assets/images/loguito.png" class="logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<div>
+    <p-sidebar [(visible)]="sidebarVisible" [style]="{ width: '5%', 'background-color': '#676F54' }">
+        <div class="sidebar">
+            <ul class="nav-list">
+              <li>
+                <a href="/home">
+                  <i class='bx bx-home'></i>
+                  <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+              </li>
+              <li>
+                <a href="/">
+                  <i class='bx bx-globe'></i>
+                  <span class="links_name">Aventuras</span>
+                </a>
+                <span class="tooltip">Aventuras</span>
+              </li>
+              <li>
+                <a href="/">
+                  <i class='bx bx-user'></i>
+                  <span class="links_name">Contactos</span>
+                </a>
+                <span class="tooltip">Contactos</span>
+              </li>
+              <li>
+                <a href="/home" style="position: absolute; bottom: 0">
+                  <i class='bx bx-map'></i>
+                  <span class="links_name">Encuentranos</span>
+                </a>
+              </li>
+            </ul>
+          </div>       
+    </p-sidebar>
+    <p-button (click)="sidebarVisible = true" icon="pi pi-bars" [style]="{ color: 'white', 'background-color': '#676F54', 'border': 'none' }"></p-button>
+</div>
