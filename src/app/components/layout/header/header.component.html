@@ -7,7 +7,7 @@
 </head>
 
 <div>
-    <p-sidebar [(visible)]="sidebarVisible" [style]="{ width: '5%', 'background-color': '#676F54' }">
+    <p-sidebar [(visible)]="sidebarVisible" [style]="{ width: '5%', 'background-color': '#BDE4A8' }">
         <div class="sidebar">
             <ul class="nav-list">
               <li>
@@ -40,5 +40,5 @@
             </ul>
           </div>       
     </p-sidebar>
-    <p-button (click)="sidebarVisible = true" icon="pi pi-bars" [style]="{ color: 'black', 'background-color': 'white', 'border': 'none', 'margin':'1%'}"></p-button>
+    <p-button styleClass="p-button-secondary p-button-text" (click)="sidebarVisible = true" icon="pi pi-bars" [style]="{ color: 'black', 'background-color': '#F6F6F6', 'border': 'none', 'margin':'1%'}"></p-button>
 </div>

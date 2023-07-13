@@ -1,2 +1,71 @@
 <app-header></app-header>
-<p>aventuras works!</p>
+<div class="fondo">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title">
+                <h2>AVENTURAS</h2>
+            </div>
+            <!-- <div class="content">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card flex justify-content-center">
+                            <p-card header="Cañonismo" subheader="Barranquismo - Torrentismo">
+                                <p class="m-6">
+                                    Actividad eco turística de aventura, es una práctica deportiva que consiste en la progresión
+                                    por cañones o barrancos, cauces de torrentes ríos de montaña; a pie o nadando con el equipo
+                                    de seguridad y el equipo profesional correspondiente.
+                                </p>
+                                <ng-template pTemplate="footer">
+                                    📍 La Garganta del Diablo -Tilcara, El Angosto de Catre - Ocloyas y Los Paredones de Yala -
+                                    Potrero de Yala
+                                </ng-template>
+                            </p-card>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p-image src="https://primefaces.org/cdn/primeng/images/galleria/galleria1.jpg" alt="Image" width="250"></p-image>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card flex justify-content-center">
+                            <p-card header="Cañonismo" subheader="Barranquismo - Torrentismo">
+                                <p class="m-6">
+                                    Actividad eco turística de aventura, es una práctica deportiva que consiste en la
+                                    progresión por cañones o barrancos, cauces de torrentes ríos de montaña; a pie o
+                                    nadando con el equipo de seguridad y el equipo profesional correspondiente.
+                                </p>
+                                <ng-template pTemplate="footer">
+                                    📍 La Garganta del Diablo -Tilcara, El Angosto de Catre - Ocloyas y Los Paredones de
+                                    Yala - Potrero de Yala
+                                </ng-template>
+                            </p-card>
+                            
+                            <button pButton type="button" icon="pi pi-external-link" label="Show"
+                                (click)="showGalleria()"></button>
+
+                            <p-galleria [value]="images" [visible]="displayBasic"
+                                [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'max-width': '850px' }"
+                                [numVisible]="7" [circular]="true" [fullScreen]="true" [showItemNavigators]="true"
+                                [showThumbnails]="false" (onShow)="onGalleriaShow()" (onHide)="onGalleriaHide()">
+                                <ng-template pTemplate="item" let-item>
+                                    <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
+                                </ng-template>
+                            </p-galleria>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="https://primefaces.org/cdn/primeng/images/galleria/galleria1.jpg"
+                                style="width: 100%; height: 100%; border-radius: 2%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

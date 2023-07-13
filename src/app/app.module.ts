@@ -9,6 +9,11 @@ import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AventurasComponent } from './components/aventuras/aventuras.component';
+import { CardModule } from 'primeng/card';
+import { FieldsetModule } from 'primeng/fieldset';
+import { ImageModule } from 'primeng/image';
+import { GalleriaModule } from 'primeng/galleria';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +27,11 @@ import { AventurasComponent } from './components/aventuras/aventuras.component';
     AppRoutingModule,
     SidebarModule,
     ButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CardModule,
+    FieldsetModule,
+    ImageModule,
+    GalleriaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
