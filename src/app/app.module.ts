@@ -13,6 +13,7 @@ import { CardModule } from 'primeng/card';
 import { FieldsetModule } from 'primeng/fieldset';
 import { ImageModule } from 'primeng/image';
 import { GalleriaModule } from 'primeng/galleria';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { GalleriaModule } from 'primeng/galleria';
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    AventurasComponent
+    AventurasComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
