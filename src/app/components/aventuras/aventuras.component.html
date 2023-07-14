@@ -30,7 +30,7 @@
 
             <div class="content">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-7">
                         <div class="card flex justify-content-center">
                             <p-card header="Cañonismo" subheader="Barranquismo - Torrentismo">
                                 <p class="m-6">
@@ -44,8 +44,8 @@
                                 </ng-template>
                             </p-card>
                             
-                            <button pButton type="button" icon="pi pi-external-link" label="Show"
-                                (click)="showGalleria()"></button>
+                            <button pButton type="button" icon="pi pi-external-link" label="Galería"
+                                (click)="showGalleria()" style="background-color: #676F54; border-color: #676F54;"></button>
 
                             <p-galleria [value]="images" [visible]="displayBasic"
                                 [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'max-width': '850px' }"
@@ -57,9 +57,80 @@
                             </p-galleria>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <div class="image-container">
-                            <img src="https://primefaces.org/cdn/primeng/images/galleria/galleria1.jpg"
+                            <img src="../../../assets/images/canionismo.jpg"
+                                style="width: 100%; height: 100%; border-radius: 2%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="card flex justify-content-center">
+                            <p-card header="Escalada deportiva" subheader="Derivado del montañismo">
+                                <p class="m-6">
+                                    Consiste en realizar ascensos sobre paredes valiéndose de la fuerza física y mental, se practica con un equipo que le permite evolucionar con seguridad. 
+                                    Existen muchos mitos sobre si este deporte lo puede practicar cualquier persona, nuestra propuesta para este tipo de actividad está pensada para que la puedan realizar personas de cualquier edad a partir de los 6 años, sin importar la condición física.
+                                </p>
+                                <ng-template pTemplate="footer">
+                                    📍 Volcán - Volcán, Alta Liana - La Cornisa, Juella - Tilcara, Cerro los Tres Hermanos - Yavi, Las Escaleras - Pálpala, entre otros.
+                                </ng-template>
+                            </p-card>
+                            
+                            <button pButton type="button" icon="pi pi-external-link" label="Galería"
+                                (click)="showGalleria()" style="background-color: #676F54; border-color: #676F54;"></button>
+
+                            <p-galleria [value]="images" [visible]="displayBasic"
+                                [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'max-width': '850px' }"
+                                [numVisible]="7" [circular]="true" [fullScreen]="true" [showItemNavigators]="true"
+                                [showThumbnails]="false" (onShow)="onGalleriaShow()" (onHide)="onGalleriaHide()">
+                                <ng-template pTemplate="item" let-item>
+                                    <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
+                                </ng-template>
+                            </p-galleria>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="image-container">
+                            <img src="../../../assets/images/escalada14.jpg"
+                                style="width: 100%; height: 100%; border-radius: 2%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="card flex justify-content-center">
+                            <p-card header="Montainbike" subheader="Cicloturismo">
+                                <p class="m-6">
+                                    Se práctica sobre terreno de campo, monte o sierra. Es la modalidad más popular y extendida porque suele servir de iniciación. Proporciona a los ciclistas la posibilidad de llegar a lugares que en otro tiempo se consideraban inaccesibles para dicho vehículo. Mejorando la maniobrabilidad y control en terrenos irregulares. A través de ella han aparecido nuevas modalidades del montañismo, acercándola hacia el campo de los deportes extremos. 
+                                </p>
+                                <ng-template pTemplate="footer">
+                                    📍 Puna, Quebrada, Valle y Yungas.
+                                </ng-template>
+                            </p-card>
+                            
+                            <button pButton type="button" icon="pi pi-external-link" label="Galería"
+                                (click)="showGalleria()" style="background-color: #676F54; border-color: #676F54;"></button>
+
+                            <p-galleria [value]="images" [visible]="displayBasic"
+                                [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'max-width': '850px' }"
+                                [numVisible]="7" [circular]="true" [fullScreen]="true" [showItemNavigators]="true"
+                                [showThumbnails]="false" (onShow)="onGalleriaShow()" (onHide)="onGalleriaHide()">
+                                <ng-template pTemplate="item" let-item>
+                                    <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
+                                </ng-template>
+                            </p-galleria>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="image-container">
+                            <img src="../../../assets/images/montanbike.jpg"
                                 style="width: 100%; height: 100%; border-radius: 2%;">
                         </div>
                     </div>
