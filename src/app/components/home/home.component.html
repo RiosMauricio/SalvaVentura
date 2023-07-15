@@ -6,60 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camping Gear Website | CodingNepal</title>
     <link rel="stylesheet" href="../home/home.component.css">
-
 </head>
 
 <body>
     <app-header></app-header>
-
     <section class="homepage" id="home">
         <div class="content">
             <div class="text">
                 <h1>¡BIENVENIDO A SALVAVENTURA!</h1>
-                <p>Conecta con la naturaleza y vive una experiencia unica</p>
+                <p>Conecta con la naturaleza y vive una experiencia única</p>
             </div>
             <div class="button-container">
+                <a href="#objetivos">¿Que buscamos?</a>
                 <a href="#aboutus">Sobre Nosotros</a>
-                <a href="#aventuras">Actividades</a>
-                <a href="#location">Encuentranos</a>
+                <a href="#location">Encuéntranos</a>
             </div>
         </div>
     </section>
 
-    <section class="format" id="aboutus">
-        <aside class="half-section" style="background-color: #a8af8dd2;">
-            <h2 class="title-section" style="font-size: 450%;">SOBRE NOSOTROS</h2><br>
-        </aside>
-        <aside class="half-section" style="background-color: #676F54;">
-            <p style="font-size: 150%;">SalvAventuras es un grupo de profesionales Lic en educación física, especialistas en actividades de
+    <section class="objetivos" id="objetivos">
+        <h2>Objetivos</h2>
+        <ul class="cards">
+            <li class="card">
+                <img src="../../../assets/images/diversidad.jpg" alt="img">
+                <h3>Actividades inclusivas</h3>
+                <p>Tenemos como objetivo hacer que cualquier dificultad no le imposibilite a nadie vivir nuestras
+                    experiencias.</p>
+            </li>
+            <li class="card">
+                <img src="../../../assets/images/aventuras.jpg" alt="img">
+                <h3>Variedad de aventuras</h3>
+                <p>Buscamos ofrecer una amplia variedad de actividades para todos nuestros visitantes.</p>
+            </li>
+            <li class="card">
+                <img src="../../../assets/images/images.png" alt="img">
+                <h3>Incentivar</h3>
+                <p>Queremos motivar al publico a conectarse mas seguido con la naturaleza y llevar una vida más sana.
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="about" id="aboutus">
+        <h2>Sobre Nosotros</h2>
+        <p>Descubre un poco más sobre SalvAventura</p>
+        <div class="row company-info">
+            <h3>¿Quienes somos?</h3>
+            <p>SalvAventuras es un grupo de profesionales Lic en educación física, especialistas en actividades de
                 aventura y servidores de turismo activo. Nace como una propuesta NOVEDOSA Y UNICA en Jujuy ante las
                 posibilidades de AVENTURA que brinda la provincia. Es una empresa INCLUSIVA, pionera en unir
                 Discapacidad y aventura, nos respaldan 13 años de trayectoria en expediciones y travesias, además de
                 rescates y colaboraciones en eventos deportivos.</p>
-        </aside>
+        </div>
+        <div class="row mission-vision">
+            <h3>¿De donde venimos?</h3>
+            <p>Esto es un texto de ejemplo: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corrupti
+                facilis deleniti ad, explicabo repellat accusantium mollitia provident corporis aperiam rerum omnis ea
+                atque? Porro hic ratione culpa laboriosam commodi. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Consectetur deserunt vel eos earum alias officiis optio, est modi laborum illum quia quidem nihil,
+                aut culpa suscipit facere animi repudiandae fuga?
+            </p>
+        </div>
     </section>
 
-
-    <section class="format" id="aventuras">
-        <aside class="half-section" style="background-color: #676F54;">
-            <p style="font-size: 150%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis atque unde, accusamus ipsam harum
-                inventore accusantium illo eaque illum earum cupiditate maiores totam ipsa. Exercitationem sit eligendi
-                nobis est asperiores.</p>
-        </aside>
-        <aside class="half-section text-end" style="background-color: #a8af8dd2;">
-            <h2 style="font-size: 450%;">VIVE NUEVAS AVENTURAS</h2><br>
-        </aside>
+    <section class="objetivos" id="location">
+        <h2>Ubicanos</h2>
+        <p>Nos encontramos en San Salvador de Jujuy, puedes vernos en el mapa clickeando la siguiente imagen</p>
+        <ul class="cards" style="align-items: center; justify-content: center;">
+            <li class="card">
+                <a class="location" href="https://www.google.com/maps/place/24%C2%B008'20.2%22S+65%C2%B017'31.6%22W/@-24.1391698,-65.2925326,18.75z/data=!4m4!3m3!8m2!3d-24.1389471!4d-65.2920992?hl=es&entry=ttu"><img src="../../../assets/images/location.png" alt="img"></a>
+                <h3>Ubicacion</h3>
+            </li>
+        </ul>
     </section>
-
-    <section class="format" id="location">
-        <aside class="half-section" style="background-color: #a8af8dd2;">
-            <h2 class="title-section" style="font-size: 450%;">¿DONDE ESTAMOS?</h2><br>
-        </aside>
-        <aside class="half-section" style="background-color: #676F54;">
-            <p style="font-size: 150%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sunt voluptates harum distinctio exercitationem unde corporis, molestias voluptatum totam eveniet excepturi nobis earum rem ab doloremque. Nostrum quis sed ut.</p>
-        </aside>
-    </section>
-
 </body>
 
 </html>

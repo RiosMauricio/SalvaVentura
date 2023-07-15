@@ -48,19 +48,20 @@ h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 5vw;
     /* Utilizar unidades relativas para que el tamaño de fuente sea responsivo */
-    border-bottom: 1px solid; padding-bottom: .2em;
+    border-bottom: 1px solid;
+    padding-bottom: .2em;
 }
 
 .card {
     height: 100%;
-  }
+}
 
 .image-container {
     height: 100%;
     display: flex;
     align-items: center;
 }
-  
+
 .image-container p-image {
     max-width: 250px;
     max-height: 160px;
